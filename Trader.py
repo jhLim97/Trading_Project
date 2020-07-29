@@ -135,8 +135,8 @@ class MyWindow(QMainWindow, UI_FORM):
         self.lineEdit_2.setText(name)
 
     def send_order(self):
-        order_type_lookup = {'신규매수': 1, '신규매도': 2, '매수취소': 3, '매도취소': 4} #키움API보고 추가하기
-        hoga_lookup = {'지정가': "00", '시장가': "03"} #키움API보고 추가하기
+        order_type_lookup = {'신규매수': 1, '신규매도': 2, '매수취소': 3, '매도취소': 4} #키움 OPEN API보고 추가하기
+        hoga_lookup = {'지정가': "00", '시장가': "03"} #키움 OPEN API보고 추가하기
 
         account = self.comboBox_2.currentText() #COMBOBOX순서 내가 섞어놈.
         order_type = self.comboBox.currentText()
